@@ -3,3 +3,13 @@
     font-weight: bold;
     margin-bottom: 10px;
 }
+
+.accordeons {
+    display: flex;
+    justify-content: space-between;
+    gap: 76px;
+
+    .accordeon {
+        width: 50%;        
+    }
+}

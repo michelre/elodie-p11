@@ -4,29 +4,24 @@
     padding: 0;
     grid-template-columns: 1fr;
     gap: 16px;
-    padding: 30px;
-    border-radius: 5px;
-    background-color: rgba(246, 246, 246, 1);
+    border-radius: 25px;
+    margin-top: 40px;
   }
 .locations li {
-    width: 340px;
     height: 340px;
     margin: 15px;
   }
 
-
-.container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-  @media screen and (min-width: 425px) {
+  @media screen and (min-width: 768px) {
     .locations {
       grid-template-columns: repeat(2, 3fr);
+      background-color: rgba(246, 246, 246, 1);
+      padding: 30px;
+
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1024px) {
     .locations {
       grid-template-columns: repeat(3, 3fr);
     }

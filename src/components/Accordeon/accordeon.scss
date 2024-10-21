@@ -1,0 +1,48 @@
+.accordeon {
+    .title {
+        background: #FF6060;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 15px;
+        border-radius: 5px;
+
+        button {
+            background: transparent;
+            border: none;
+        }
+
+        button img {
+            transform: rotate(180deg);
+            transition: transform .5s linear;
+        }
+    }
+
+    .accordeon-content {
+        overflow: hidden;
+        transition: height .5s ease-in-out;
+        background: #F6F6F673;
+        
+        > div {
+            padding: 16px 20px;
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    &.open {
+
+        button img {
+            transform: rotate(0deg);
+        }
+    }
+}

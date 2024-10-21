@@ -23,7 +23,7 @@ const Home = () => {
         image="/src/assets/banner1.svg" 
         title="Chez vous, partout et ailleurs" 
       />
-            <div className="container"> 
+            <div className="container-locations"> 
                 <ul className="locations">
                     {locations.map((location) => {
                         return <li key={location.id}>
