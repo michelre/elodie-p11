@@ -16,7 +16,9 @@ const Location = () => {
 
     return (
         location && <>
-           <h1>{location.title}</h1>
+           <div>
+        <h1 className="title-location">{location.title}</h1>
+      </div>
         </>
     )
 }
