@@ -1,0 +1,14 @@
+
+.accordeon-container {
+  padding: 38px 0 0 0;
+}  
+
+  @media screen and (min-width: 768px) {
+    
+  }
+
+  @media screen and (min-width: 1024px) {
+    .accordeon-container {
+      padding: 38px 107px 8px 107px;
+    }  
+  }

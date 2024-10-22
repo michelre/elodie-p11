@@ -1,8 +1,14 @@
+import './about.scss'
 import Accordeon from "../../components/Accordeon/Accordeon";
+import HeaderImage from '../../components/HeaderImage/HeaderImage';
 
 const About = () => {
     return <>
-        <Accordeon title="Fiabilité">
+     <HeaderImage 
+        image="/src/assets/banner2.svg" 
+      />
+      <div className="accordeon-container">
+      <Accordeon title="Fiabilité">
             <p>
                 Les annonces postées sur Kasa garantissent une fiabilité totale. 
                 Les photos sont conformes aux logements, et toutes les informations sont régulièrement 
@@ -32,6 +38,8 @@ const About = () => {
             Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.
             </p>
         </Accordeon>
+      </div>
+       
     </>
 }
 

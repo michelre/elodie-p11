@@ -12,7 +12,6 @@ const Accordeon = ({title, children}) => {
         setDisplay(!display)
     }
 
-
     return <div className={`accordeon ${display ? 'open' : ''}`}>
         <div className="title">
             {title}
