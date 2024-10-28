@@ -4,8 +4,9 @@ import Slider from "../../components/Slider/Slider";
 import Accordeon from "../../components/Accordeon/Accordeon";
 import Author from "../../components/Author/Author";
 import Tags from "../../components/Tags/Tags";
+import Rating from "../../components/Rating/Rating";
 
-import './location.scss'
+import './location.scss';
 
 
 const Location = () => {
@@ -39,6 +40,7 @@ const Location = () => {
             
             <div className="right">
                 <Author name={location.host.name} picture={location.host.picture} />
+                <Rating rating={location.rating} /> 
             </div>
         </div>
         <div className="accordeons">

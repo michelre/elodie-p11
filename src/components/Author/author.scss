@@ -1,5 +1,7 @@
 .author{
     display: flex;
+    flex-direction: row-reverse;
+    width: 50%;
     .author-picture {       
         border-radius: 70px;
         width: 32px;
@@ -27,6 +29,7 @@
     }
     .author-name{
         font-size: 18px;
+        width: 16%;
         margin: 0 10px;
         text-align: end;
     }

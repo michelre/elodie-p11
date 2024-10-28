@@ -1,6 +1,5 @@
 .location-info{
-    display: flex;
-    justify-content: space-between;
+  
     .title-location{
         font-size: 20px;
         font-weight: bold;
@@ -11,15 +10,40 @@
         width: 100%; 
      }
      .right{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
          width: 100%;
      }
 }
 .accordeons {
     display: flex;
-    justify-content: space-between;
-    gap: 76px;
-
+    flex-wrap: wrap;
     .accordeon {
-        width: 50%;        
+        width: 100%;        
     }
+}
+@media screen and (min-width: 1024px) {
+    .location-info{
+        display: flex;
+        justify-content: space-between;
+        .title-location{
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color:rgba(255, 96, 96, 1);
+        }
+        .left{
+            width: 100%; 
+         }
+         .right{
+             width: 100%;
+         }
+    }
+    .accordeons {
+        justify-content: space-between;
+        .accordeon {
+            width: 49%;        
+        }
+    } 
 }
