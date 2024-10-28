@@ -37,7 +37,8 @@
             width: 100%; 
          }
          .right{
-             width: 50%;
+            width: 30%;
+            flex-wrap: wrap;
          }
     }
     .accordeons {
